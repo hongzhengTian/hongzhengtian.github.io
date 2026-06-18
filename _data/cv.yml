@@ -1,0 +1,90 @@
+cv:
+  name: Hongzheng Tian
+  label: Ph.D. Candidate in Computer Engineering
+  email: hongzhet@uci.edu
+  location: Irvine, CA
+  image: assets/img/prof_pic.jpg
+  summary: Ph.D. candidate at UC Irvine working on compilers, optimization, and heterogeneous computing.
+
+  social_networks:
+    - network: GitHub
+      username: hongzhengTian
+    - network: LinkedIn
+      username: hongzheng-tian-853258204
+
+  sections:
+    Education:
+      - institution: University of California, Irvine
+        location: Irvine, CA
+        area: Computer Engineering
+        studyType: Ph.D.
+        start_date: 2022-09
+        end_date: 2027-06
+        highlights:
+          - Advisor: Prof. Sitao Huang.
+          - Research group: CORSA.
+      - institution: University of California, Irvine
+        location: Irvine, CA
+        area: Computer Engineering
+        studyType: M.S.
+        start_date: 2020-09
+        end_date: 2022-06
+      - institution: Northwestern Polytechnical University
+        location: Shaanxi, China
+        area: Microelectronics Science and Engineering
+        studyType: B.Eng.
+        start_date: 2016-09
+        end_date: 2020-06
+
+    Experience:
+      - company: Hewlett Packard Enterprise
+        position: Research Associate Intern
+        location: Remote / USA
+        start_date: 2024-06
+        end_date: 2024-09
+        summary: Developed HeteroBench, a benchmark suite for heterogeneous computing systems.
+        highlights:
+          - Designed benchmarks for CPUs, GPUs, and accelerators.
+          - Built profiling methodologies for performance, scalability, and resource utilization.
+          - Analyzed scheduling and execution strategies across diverse architectures.
+      - company: Hewlett Packard Enterprise
+        position: Research Associate Intern
+        location: Remote / USA
+        start_date: 2023-06
+        end_date: 2023-09
+        summary: Built CoVA, an MLIR-based compilation flow for heterogeneous backend devices.
+        highlights:
+          - Designed custom MLIR dialects for high-level program semantics.
+          - Implemented analysis and transformation passes targeting CPUs, GPUs, and FPGAs.
+          - Integrated Python bindings and MLIR-to-LLVM lowering.
+      - company: IMBED LLC
+        position: Development Engineer Trainee
+        location: Remote
+        start_date: 2021-09
+        end_date: 2022-01
+        summary: Designed components of a real-time JPEG2000 player based on FPGA.
+        highlights:
+          - Implemented JPEG2000 decoder components.
+          - Designed and simulated the MQ entropy decoder in Verilog HDL.
+
+    Awards:
+      - title: Best Paper Award - Artifact Track, ICPE 2025
+        date: 2025-05
+        awarder: ICPE
+      - title: Nominated for EECS Professor/Graduate Student/Undergraduate Student of the Year Award
+        date: 2024-03
+        awarder: University of California, Irvine
+      - title: Second-class Scholarship for Outstanding Student
+        date: 2018-12
+        awarder: Northwestern Polytechnical University
+      - title: Second Prize, Undergraduate Mathematical Contest in Modelling
+        date: 2018-06
+        awarder: Northwestern Polytechnical University
+
+    Skills:
+      - label: Languages
+        details: C, C++, OpenMP, Python, Verilog HDL, VHDL, MATLAB
+      - label: Tools
+        details: MLIR, LLVM, Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB
+      - label: Research Areas
+        details: compilers, heterogeneous computing, optimization, FPGA/GPU acceleration, benchmarking
