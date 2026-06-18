@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain Hongzheng Site"
+  short_description: "Maintain Hongzheng Tian's al-folio GitHub Pages site."
+  default_prompt: "Use this skill to update content, assets, deployment settings, or maintenance documentation for Hongzheng Tian's personal academic website."
