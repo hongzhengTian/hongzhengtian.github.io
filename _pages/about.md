@@ -14,7 +14,7 @@ profile:
     <p>hongzhet [at] uci [dot] edu</p>
 
 selected_papers: true
-social: true
+social: false
 
 announcements:
   enabled: true
@@ -31,4 +31,13 @@ My research lies at the intersection of **compilers, optimization, and heterogen
 
 I am broadly interested in compiler infrastructure for heterogeneous systems, performance portability, accelerator design automation, and practical tools that help researchers and developers reason about efficiency across modern hardware.
 
-You can find my latest [CV](/assets/pdf/HongzhengTian_CV.pdf), [GitHub](https://github.com/hongzhengTian), and [LinkedIn](http://linkedin.com/in/hongzheng-tian-853258204) here.
+<div class="social">
+  <div class="contact-icons">
+    <a href="{{ site.data.socials.cv_pdf }}" title="CV"><i class="ai ai-cv"></i></a>
+    <a href="mailto:{{ site.data.socials.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="/feed.xml" title="RSS"><i class="fa-solid fa-square-rss"></i></a>
+  </div>
+  <div class="contact-note">{{ site.contact_note }}</div>
+</div>
