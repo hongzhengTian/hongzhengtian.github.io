@@ -9,16 +9,16 @@ nav_order: 4
 
 ## Research Experience
 
-**Hewlett Packard Enterprise - Research Associate Intern**  
-*Summer 2024, HeteroBench*  
+**Hewlett Packard Enterprise - Research Associate Intern**<br>
+_Summer 2024, HeteroBench_<br>
 Developed a benchmark suite for heterogeneous computing systems across CPUs, GPUs, and accelerators. The work focused on workload design, profiling, scalability measurement, and analysis of performance variability across diverse execution strategies.
 
-**Hewlett Packard Enterprise - Research Associate Intern**  
-*Summer 2023, CoVA*  
+**Hewlett Packard Enterprise - Research Associate Intern**<br>
+_Summer 2023, CoVA_<br>
 Built an MLIR-based compilation flow for heterogeneous backend devices. The work included custom dialect design, MLIR-to-LLVM lowering, Python binding integration, and transformations targeting CPUs, GPUs, and FPGAs.
 
-**IMBED LLC - Development Engineer Trainee**  
-*Fall 2021*  
+**IMBED LLC - Development Engineer Trainee**<br>
+_Fall 2021_<br>
 Designed components for a real-time JPEG2000 player for digital cinema applications, with emphasis on FPGA implementation of the MQ entropy decoder.
 
 ## Honors

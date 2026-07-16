@@ -4,12 +4,16 @@ This repository hosts the personal academic website for Hongzheng Tian, built wi
 
 ## Local development
 
-Install Ruby and Bundler, then run:
+The deployed site uses Ruby 3.3.5 and Bundler 4.0.6. After installing the project dependencies, run:
 
 ```bash
 bundle install
-bundle exec jekyll serve
+npm ci
+bundle exec jekyll build
+bundle exec jekyll serve --livereload --livereload-port 35730
 ```
+
+Then open `http://127.0.0.1:4000/`. For the complete first-time macOS setup, compiler troubleshooting, and local validation checklist, see [`docs/WEBSITE_MAINTENANCE.md`](docs/WEBSITE_MAINTENANCE.md#新-mac-第一次配置开发环境).
 
 The production site is configured for:
 

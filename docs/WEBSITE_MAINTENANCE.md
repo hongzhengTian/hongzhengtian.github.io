@@ -10,7 +10,7 @@
 
 1. 在本地 clone 或打开仓库：
 
-   ```powershell
+   ```bash
    git clone https://github.com/hongzhengTian/hongzhengtian.github.io.git
    cd hongzhengtian.github.io
    ```
@@ -18,7 +18,7 @@
 2. 修改对应文件。
 3. 提交并上传：
 
-   ```powershell
+   ```bash
    git status
    git add <修改过的文件>
    git commit -m "Update website content"
@@ -33,22 +33,124 @@
 - `.codex/skills/maintain-hongzhengtian-site/SKILL.md`
 - `docs/WEBSITE_MAINTENANCE.md`
 
+## 新 Mac 第一次配置开发环境
+
+正式部署使用 Ruby 3.3.5、Bundler 4.0.6 和 Node 20。较新的 Node 版本只要能够通过 `npm ci` 也可以用于本地开发。macOS 自带的 Ruby 版本较旧，不要用它安装本站依赖，也不要执行 `sudo gem install`。
+
+### 1. 检查基础工具
+
+```bash
+xcode-select -p
+brew --version
+git --version
+node --version
+npm --version
+```
+
+需要完整 Xcode 或 Xcode Command Line Tools，以及 Homebrew、Git 和 Node.js。如果 `xcode-select -p` 失败，运行 `xcode-select --install`；如果缺少 `node` 或 `npm`，运行 `brew install node`。Node 20 与 GitHub Actions 的环境一致，较新的 Node 版本只要通过后面的检查也可以使用。
+
+### 2. 安装 Ruby 管理器和图片依赖
+
+```bash
+brew install rbenv ruby-build imagemagick
+rbenv init
+```
+
+运行 `rbenv init` 后，关闭并重新打开终端，让 shell 配置生效。
+
+### 3. 安装并绑定项目 Ruby
+
+```bash
+cd ~/study_code/hongzhengtian.github.io
+
+env CC=/usr/bin/clang \
+  CXX=/usr/bin/clang++ \
+  SDKROOT="$(xcrun --sdk macosx --show-sdk-path)" \
+  rbenv install -s 3.3.5
+
+rbenv local 3.3.5
+ruby --version
+```
+
+这里明确使用 Xcode 自带的 Apple Clang 和当前 macOS SDK。这样可以避开 Homebrew LLVM 或旧 Command Line Tools 配置中可能存在的失效 SDK 路径。`ruby --version` 应显示 Ruby 3.3.5；项目生成的 `.ruby-version` 已在 `.gitignore` 中，不会被误提交。
+
+### 4. 安装 Bundler 和项目依赖
+
+```bash
+gem install bundler -v 4.0.6 --no-document
+bundle --version
+bundle install --jobs 4 --retry 3
+npm ci
+```
+
+`bundle --version` 应显示 4.0.6。`bundle install` 使用 `Gemfile.lock` 中锁定的 Ruby 依赖，`npm ci` 使用 `package-lock.json` 中锁定的前端检查依赖。
+
+### Ruby 编译报错：C compiler cannot create executables
+
+如果日志包含不存在的 SDK，例如：
+
+```text
+clang: warning: no such sysroot directory: '/Library/Developer/CommandLineTools/SDKs/MacOSX26.sdk'
+configure: error: C compiler cannot create executables
+```
+
+说明终端选到了错误的 Clang/SDK，而不是 Ruby 下载损坏。先确认：
+
+```bash
+xcode-select -p
+xcrun --sdk macosx --show-sdk-path
+command -v clang
+```
+
+然后重新执行上面带有 `CC`、`CXX` 和 `SDKROOT` 的 `rbenv install` 命令。
+
+## 本地构建、检查和预览
+
+### 提交前的完整检查
+
+```bash
+bundle exec jekyll build
+npm run lint:prettier
+npm run lint:style-contract
+git diff --check
+```
+
+这些命令分别验证：Jekyll 能完整生成网站、文件格式符合仓库规则、al-folio 插件和关键站点文件仍满足结构约定，以及 Git diff 中没有空白错误。
+
+### 启动本地预览
+
+```bash
+bundle exec jekyll serve --livereload --livereload-port 35730
+```
+
+浏览器打开：
+
+```text
+http://127.0.0.1:4000/
+```
+
+修改 Markdown、YAML 或图片后，Jekyll 会自动重新生成页面，LiveReload 会刷新浏览器。按 `Control + C` 停止服务器。如果 4000 端口被占用，可以添加 `--port 4001`；如果 35730 被占用，可以换一个 `--livereload-port`。
+
+### 不配置本地环境是否也能更新网站
+
+可以。只修改内容并 push 到 `main` 后，GitHub Actions 仍会完成正式构建和部署。不过，建议至少在较大的内容或结构修改前运行一次本地构建，以便在发布前发现 YAML、Liquid、BibTeX、图片路径或依赖问题。
+
 ## 文件和网页对应关系
 
-| 想改的内容 | 修改文件 |
-| --- | --- |
-| 首页 About 文字 | `_pages/about.md` |
-| 首页头像 | `assets/img/prof_pic.jpg` |
-| 首页社交链接和 CV PDF 链接 | `_data/socials.yml` |
-| Research 页面项目卡片 | `_projects/*.md` |
-| Publications 页面论文列表 | `_bibliography/papers.bib` |
-| Experience 页面 | `_pages/experience.md` |
-| CV 网页版 | `_pages/cv.md` |
-| CV PDF 文件 | `assets/pdf/HongzhengTian_CV.pdf` |
-| Photography 页面 | `_pages/photography.md` |
-| 首页 news/announcement | `_news/*.md` |
-| 网站标题、URL、全局设置 | `_config.yml` |
-| GitHub Actions 部署流程 | `.github/workflows/deploy.yml` |
+| 想改的内容                 | 修改文件                          |
+| -------------------------- | --------------------------------- |
+| 首页 About 文字            | `_pages/about.md`                 |
+| 首页头像                   | `assets/img/prof_pic.jpg`         |
+| 首页社交链接和 CV PDF 链接 | `_data/socials.yml`               |
+| Research 页面项目卡片      | `_projects/*.md`                  |
+| Publications 页面论文列表  | `_bibliography/papers.bib`        |
+| Experience 页面            | `_pages/experience.md`            |
+| CV 网页版                  | `_pages/cv.md`                    |
+| CV PDF 文件                | `assets/pdf/HongzhengTian_CV.pdf` |
+| Photography 页面           | `_pages/photography.md`           |
+| 首页 news/announcement     | `_news/*.md`                      |
+| 网站标题、URL、全局设置    | `_config.yml`                     |
+| GitHub Actions 部署流程    | `.github/workflows/deploy.yml`    |
 
 ## 修改首页
 
@@ -240,23 +342,6 @@ rss_icon: false
 - 避免空格和中文文件名。
 - 替换已有图片/PDF 时，保持原文件名最省事。
 - 如果改了文件名，要同步修改引用它的 Markdown 或 YAML。
-
-## 本地预览
-
-如果电脑上安装了 Ruby 和 Bundler，可以本地预览：
-
-```powershell
-bundle install
-bundle exec jekyll serve
-```
-
-然后浏览器打开本地地址，通常是：
-
-```text
-http://127.0.0.1:4000/
-```
-
-如果没有 Ruby，也可以只修改并 push，让 GitHub Actions 构建。这个仓库的正式部署主要依赖 GitHub Actions。
 
 ## 发布和 GitHub Actions
 
