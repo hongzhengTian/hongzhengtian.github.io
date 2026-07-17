@@ -2,7 +2,7 @@
 
 ## Repository Purpose
 
-This repository is the source for `https://hongzhengtian.github.io/`, Hongzheng Tian's personal academic website. It uses the al-folio Jekyll theme and deploys through GitHub Actions.
+This repository is the source for `https://hongzhengtian.com/`, Hongzheng Tian's personal academic website. GitHub Pages also provides the default `https://hongzhengtian.github.io/` address. The site uses the al-folio Jekyll theme and deploys through GitHub Actions.
 
 ## Key Files And Directories
 
@@ -14,6 +14,9 @@ This repository is the source for `https://hongzhengtian.github.io/`, Hongzheng 
 - `_pages/cv.md`: hand-written web CV page at `/cv/`.
 - `_pages/photography.md`: personal photography page.
 - `_pages/404.md`: custom not found page.
+- `_pages/legacy-*.md`: compatibility redirects for retired Google Sites routes.
+- `_layouts/redirect.html`: lightweight redirect layout used by legacy routes.
+- `CNAME`: persistent GitHub Pages custom-domain declaration.
 - `_projects/*.md`: research project detail/card source files.
 - `_bibliography/papers.bib`: publication metadata used by the publications page.
 - `_news/*.md`: homepage announcements.

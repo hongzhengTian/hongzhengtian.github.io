@@ -18,7 +18,7 @@ Then open `http://127.0.0.1:4000/`. For the complete first-time macOS setup, com
 The production site is configured for:
 
 ```text
-https://hongzhengtian.github.io
+https://hongzhengtian.com
 ```
 
 ## Deployment

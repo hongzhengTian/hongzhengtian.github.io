@@ -20,7 +20,7 @@ toc:
 - **Email:** [hongzhet@uci.edu](mailto:hongzhet@uci.edu)
 - **GitHub:** [github.com/hongzhengTian](https://github.com/hongzhengTian)
 - **LinkedIn:** [linkedin.com/in/hongzhengtian](https://www.linkedin.com/in/hongzhengtian/)
-- **Website:** [hongzhengtian.com](https://www.hongzhengtian.com/)
+- **Website:** [hongzhengtian.com](https://hongzhengtian.com/)
 
 ## Education
 

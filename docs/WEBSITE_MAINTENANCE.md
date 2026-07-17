@@ -1,6 +1,6 @@
 # 个人网站维护手册
 
-这个仓库维护的是 `https://hongzhengtian.github.io/`，网站基于 al-folio/Jekyll，通过 GitHub Actions 自动部署到 GitHub Pages。
+这个仓库维护的是 `https://hongzhengtian.com/`，网站基于 al-folio/Jekyll，通过 GitHub Actions 自动部署到 GitHub Pages。GitHub 提供的默认地址是 `https://hongzhengtian.github.io/`。
 
 这份文档的目标是：换电脑后重新 clone，也能让你或 AI agent 快速知道该改哪里、怎么发布、网页端还可能需要点哪些设置。
 
@@ -389,13 +389,13 @@ rss_icon: false
 
 ## 自定义域名
 
-如果以后要把 `www.hongzhengtian.com` 指到新网站，需要同时处理 GitHub 和域名 DNS。
+正式网站使用 `hongzhengtian.com`，自定义域名需要同时在 GitHub Pages 和域名 DNS 中保持正确配置。
 
 GitHub 端：
 
 1. 仓库 `Settings` -> `Pages`。
 2. 找到 `Custom domain`。
-3. 输入域名，例如 `www.hongzhengtian.com`。
+3. 输入 `hongzhengtian.com`。
 4. 点击 `Save`。
 5. 等待 GitHub 检查 DNS。
 6. 如果可用，启用 `Enforce HTTPS`。
@@ -403,7 +403,9 @@ GitHub 端：
 DNS 端：
 
 - 在域名服务商处添加或修改 DNS 记录。
-- 常见做法是让 `www` 的 CNAME 指向 `hongzhengtian.github.io`。
+- 根域名 `@` 使用 GitHub Pages 官方 A/AAAA 记录。
+- `www` 的 CNAME 指向 `hongzhengtian.github.io`。
+- 仓库根目录的 `CNAME` 文件必须保留为 `hongzhengtian.com`，避免重新部署后丢失设置。
 - 不要删除域名购买/续费服务；GitHub Pages 免费，但域名本身仍然需要续费。
 
 迁移前建议：
