@@ -19,7 +19,7 @@ toc:
 
 - **Email:** [hongzhet@uci.edu](mailto:hongzhet@uci.edu)
 - **GitHub:** [github.com/hongzhengTian](https://github.com/hongzhengTian)
-- **LinkedIn:** [linkedin.com/in/hongzhengtian](https://www.linkedin.com/in/hongzhengtian/)
+- **LinkedIn:** [linkedin.com/in/hongzheng-tian-853258204](https://www.linkedin.com/in/hongzheng-tian-853258204/)
 - **Website:** [hongzhengtian.com](https://hongzhengtian.com/)
 
 ## Education
@@ -28,7 +28,7 @@ toc:
   Ph.D. in Computer Engineering, Sep. 2022 - Jun. 2027 expected.
 
 - **University of California, Irvine (UCI)**, CA, USA
-  Master's Degree in Computer Engineering, Sep. 2020 - Jun. 2022.
+  M.S. in Electrical and Computer Engineering, Sep. 2020 - Jun. 2022.
 
 - **University of California, Riverside (UCR)**, CA, USA
   UCR Graduate Preparation Program in Engineering, Aug. 2019 - Jun. 2020.
@@ -49,9 +49,9 @@ toc:
 ## Skills
 
 - **Languages:** C, C++, OpenMP, Python, Verilog HDL, VHDL, MATLAB.
-- **Software And Tools:** Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB.
+- **Software And Tools:** MLIR, LLVM, Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB.
 
-## Researches And Publications
+## Research And Publications
 
 ### HeteroBench: Multi-kernel Benchmarks For Heterogeneous Systems
 
@@ -64,6 +64,12 @@ Built a cross-platform benchmark suite for evaluating heterogeneous HPC workload
 - Publication: [ICPE 2025](https://doi.org/10.1145/3676151.3719366), [SPEC RG Tools](https://research.spec.org/tools/overview/heterobench/)
 - Code: [HewlettPackard/HeteroBench](https://github.com/HewlettPackard/HeteroBench)
 - Award: Best Paper Award - Artifact Track
+
+### SAMT: Optimized Spatial Architecture Mapping Flow For Transformer Accelerators
+
+A framework for optimizing dataflow mappings of Transformer inference workloads on spatial accelerators. The work combines mapping search with dynamic operator fusion to improve latency and energy efficiency across edge, mobile, and cloud platforms.
+
+- Publication: Haocheng Xu, Faraz Tahmasebi, Ye Qiao, **Hongzheng Tian**, Hyoukjun Kwon, and Sitao Huang. "Optimized Spatial Architecture Mapping Flow for Transformer Accelerators." [arXiv:2410.07407, 2024](https://arxiv.org/abs/2410.07407).
 
 ### CoVA: An MLIR-Based Compilation Flow For Versatile Architecture
 
@@ -81,7 +87,7 @@ Built an MLIR-based compilation flow for heterogeneous backend devices, enhancin
 Project jointly supervised by the CORSA Lab, UCI and the School of Cyberspace Science and Technology, Beijing Institute of Technology.
 Advisors: Prof. Sitao Huang, Prof. Yanjun Zhang, and Dr. Bo Yu.
 
-Implemented the attention module based on Versal ACAP AI Engines, with kernel fusion applied.
+FPGA-based acceleration of autonomous path planning, focusing on sparse matrix-vector multiplication and preconditioned conjugate gradient (PCG) computation for quadratic programming.
 
 - Publication: [ICCAD 2024](https://dl.acm.org/doi/abs/10.1145/3676536.3676700)
 - Poster: [FPGA 2024](https://dl.acm.org/doi/abs/10.1145/3626202.3637597)
@@ -104,7 +110,8 @@ Advisors: Prof. Fadi J. Kurdahi, Dr. Mohammed E. Fouda, and Dr. Minjun Seo.
 
 Built a new FPGA implementation of an associative processor.
 
-- Publications: [ISCAS 2023](https://iscas2023.org/) and [IEEE TCAS-II](https://ieeexplore.ieee.org/abstract/document/10081044)
+- Publication: [IEEE TCAS-II, 2023](https://ieeexplore.ieee.org/abstract/document/10081044)
+- Presentation: [ISCAS 2023](https://iscas2023.org/)
 
 ## Internships
 
@@ -203,9 +210,12 @@ Northwestern Polytechnical University.
 
 ## Activities
 
-- **Young Fellow Program of the 60th Design Automation Conference**, poster presentation.
-- **SC24 ACM Student Research Competition**, [poster presentation](https://sc24.supercomputing.org/program/posters/acm-student-research-competition/).
-- **LATTE 2023, Workshop on Languages, Tools, and Techniques for Accelerator Design**, presentation for "PyAIE: A Python-based Compiler Framework for Versal ACAP Platforms."
+- Invited session chair and speaker, "Benchmarking in the Data Center: Expanding to the Cloud" Workshop at ICPE 2025. Declined due to travel constraints.
+- Poster presentation, [SC24 ACM Student Research Competition](https://sc24.supercomputing.org/program/posters/acm-student-research-competition/), Atlanta, GA, 2024.
+- Poster presentation, UCI GEECS Showcase, Irvine, CA, 2024.
+- Poster presentation, [FPGA 2024](https://www.isfpga.org/), Monterey, CA, 2024.
+- Poster presentation, Young Fellow Program, [60th Design Automation Conference](https://www.dac.com/Attend/Students-Scholarships/Young-Student-Fellow-Program), San Francisco, CA, 2023.
+- Presentation, [LATTE '23](https://capra.cs.cornell.edu/latte23/), Workshop on Languages, Tools, and Techniques for Accelerator Design, 2023. "[PyAIE: A Python-based Compiler Framework for Versal ACAP Platforms](https://capra.cs.cornell.edu/latte23/paper/10.pdf)."
 
 ## Related Courses
 

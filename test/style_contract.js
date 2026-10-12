@@ -45,13 +45,28 @@ if (!/gem 'al_math', '= 1\.0\.1'/.test(gemfile)) {
   failures.push("Gemfile must keep al_math pinned to 1.0.1.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+for (const forbiddenPath of ["_includes", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`The personal-site starter must not own plugin runtime path: ${forbiddenPath}.`);
   }
 }
 
+// Legacy URLs need this one local layout; all other layouts belong to the theme.
+if (exists("_layouts")) {
+  const layoutsPath = path.join(root, "_layouts");
+  if (!fs.lstatSync(layoutsPath).isDirectory()) {
+    failures.push("_layouts must be a directory containing only redirect.html.");
+  } else {
+    for (const entry of fs.readdirSync(layoutsPath, { withFileTypes: true })) {
+      if (entry.name !== "redirect.html" || !entry.isFile()) {
+        failures.push(`Only the regular file _layouts/redirect.html is allowed; found _layouts/${entry.name}.`);
+      }
+    }
+  }
+}
+
 const requiredFiles = [
+  "_layouts/redirect.html",
   "_pages/about.md",
   "_pages/projects.md",
   "_pages/publications.md",

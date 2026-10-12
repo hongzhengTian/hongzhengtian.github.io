@@ -18,7 +18,7 @@ _Summer 2023, CoVA_<br>
 Built an MLIR-based compilation flow for heterogeneous backend devices. The work included custom dialect design, MLIR-to-LLVM lowering, Python binding integration, and transformations targeting CPUs, GPUs, and FPGAs.
 
 **IMBED LLC - Development Engineer Trainee**<br>
-_Fall 2021_<br>
+_Sep. 2021 - Jan. 2022_<br>
 Designed components for a real-time JPEG2000 player for digital cinema applications, with emphasis on FPGA implementation of the MQ entropy decoder.
 
 ## Honors
@@ -34,13 +34,13 @@ Designed components for a real-time JPEG2000 player for digital cinema applicati
 - Poster presentation, [SC24 ACM Student Research Competition](https://sc24.supercomputing.org/program/posters/acm-student-research-competition/), Atlanta, GA, 2024.
 - Poster presentation, UCI GEECS Showcase, Irvine, CA, 2024.
 - Poster presentation, [FPGA 2024](https://www.isfpga.org/), Monterey, CA, 2024.
-- Young Fellow Program, [60th Design Automation Conference](https://www.dac.com/Attend/Students-Scholarships/Young-Student-Fellow-Program), San Francisco, CA, 2023.
-- Presentation, [LATTE '23](https://capra.cs.cornell.edu/), Workshop on Languages, Tools, and Techniques for Accelerator Design, 2023.
+- Poster presentation, Young Fellow Program, [60th Design Automation Conference](https://www.dac.com/Attend/Students-Scholarships/Young-Student-Fellow-Program), San Francisco, CA, 2023.
+- Presentation, [LATTE '23](https://capra.cs.cornell.edu/latte23/), Workshop on Languages, Tools, and Techniques for Accelerator Design, 2023. "[PyAIE: A Python-based Compiler Framework for Versal ACAP Platforms](https://capra.cs.cornell.edu/latte23/paper/10.pdf)."
 
 ## Education
 
 - **University of California, Irvine**, Ph.D. in Computer Engineering, 2022 - 2027 expected.
-- **University of California, Irvine**, M.S. in Computer Engineering, 2020 - 2022.
+- **University of California, Irvine**, M.S. in Electrical and Computer Engineering, 2020 - 2022.
 - **University of California, Riverside**, Graduate Preparation Program in Engineering, 2019 - 2020.
 - **University of British Columbia**, Vancouver Summer Program in Communication Systems and Digital System Design with FPGA, 2018.
 - **Northwestern Polytechnical University**, B.Eng. in Microelectronics Science and Engineering, 2016 - 2020.

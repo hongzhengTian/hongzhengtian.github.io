@@ -173,12 +173,32 @@ assets/img/prof_pic.jpg
 
 ## 修改 CV
 
+网页与 CV 必须在同一次任务中同步维护。CV 源码仓库是相邻目录
+`../HongzhengTian_CV`，以后修改经历、教育、论文、活动或联系方式时：
+
+1. 同步修改 CV LaTeX 源码与本网站对应内容，包括 `_pages/cv.md`、
+   `_pages/experience.md`、论文、项目和个人信息；按需同步 `_data/cv.yml`。
+2. 编译 CV，将逐页检查后的 PDF 保存为
+   `../HongzhengTian_CV/output/pdf/HongzhengTian_CV.pdf`。
+3. 将同一个 PDF 复制到 `assets/pdf/HongzhengTian_CV.pdf`，不要单独生成另一版本。
+4. 运行格式检查、结构检查、Jekyll 构建和 `git diff --check`，并核对三份 PDF：
+
+   ```bash
+   cmp ../HongzhengTian_CV/output/pdf/HongzhengTian_CV.pdf assets/pdf/HongzhengTian_CV.pdf
+   cmp assets/pdf/HongzhengTian_CV.pdf _site/assets/pdf/HongzhengTian_CV.pdf
+   ```
+
+5. 用户授权发布后，提交并推送两个仓库；确认部署成功，并核对线上页面内容及线上 PDF。
+
+网页可以继续省略 PDF 中的私人联系方式，但共有事实必须一致。不要编造未知的项目日期或个人贡献。
+任一仓库不可用时，应明确说明同步尚未完成。两个仓库的 `AGENTS.md` 均记录了此要求。
+
 当前有两个 CV 入口：
 
 - 网页版 CV：`_pages/cv.md`
 - PDF CV：`assets/pdf/HongzhengTian_CV.pdf`
 
-如果只更新 PDF：
+替换已同步更新的 PDF：
 
 1. 把新 PDF 放到 `assets/pdf/`。
 2. 最简单的方式是覆盖旧文件，仍然命名为 `HongzhengTian_CV.pdf`。
