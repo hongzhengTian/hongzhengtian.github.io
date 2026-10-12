@@ -3,7 +3,7 @@ layout: page
 title: research
 permalink: /research/
 description: Selected research projects in compilers, optimization, and heterogeneous computing.
-nav: true
+nav: false
 nav_order: 2
 horizontal: false
 ---

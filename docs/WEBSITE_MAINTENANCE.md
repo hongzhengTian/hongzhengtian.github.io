@@ -261,6 +261,10 @@ assets/img/prof_pic.jpg
 
 Research 页面由 `_projects/` 里的文件生成。
 
+目前 Research 仅从导航隐藏，`/research/`、项目详情页和旧地址跳转均保留。
+以后恢复导航时，将 `_pages/projects.md` 的 `nav: false` 改为 `nav: true` 即可；
+`nav_order: 2` 保留了原来的导航位置，无需重建项目页面。
+
 每个项目文件顶部类似：
 
 ```yaml
