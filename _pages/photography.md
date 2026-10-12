@@ -7,6 +7,4 @@ nav: true
 nav_order: 6
 ---
 
-I am an amateur photographer. This page is intentionally minimal for the first version of the site.
-
-Instagram: **@clank_tian**
+Outside of research, I enjoy photography as an amateur. You can find me on Instagram at [@clank_tian](https://www.instagram.com/clank_tian/).

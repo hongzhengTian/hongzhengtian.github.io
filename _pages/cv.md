@@ -237,14 +237,15 @@ Northwestern Polytechnical University.
 
 **University of California, Riverside**
 
-- EE XRC 139 Solid-state Electronics: A.
+- EE XRC 133 Solid-State Electronics: A.
 - EE XRC 146 Computer Vision: A.
-- EE XRC 168 Introduction of VLSI Design: A+.
-- EE XRC 260 Seminar in Electrical Engineering, Advanced VLSI: A+.
+- EE XRC 168 Introduction to Very Large Scale Integration (VLSI) Design: A+.
+- EE XRC 260 Seminar in Electrical Engineering (Advanced VLSI Design for Machine Learning and AI): A+.
 
 ## Teaching
 
-- **Teaching Assistant**, EECS 112 Computer Architecture, Fall 2023.
+- **Teaching Assistant**, EECS 112L Organization of Digital Computers Laboratory, Fall 2026.
+- **Teaching Assistant**, EECS 112 Organization of Digital Computers, Fall 2023.
 
 ## Extracurricular Activities
 

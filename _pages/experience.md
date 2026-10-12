@@ -2,7 +2,7 @@
 layout: page
 title: experience
 permalink: /experience/
-description: Research internships, awards, activities, and education.
+description: Research internships, teaching, awards, activities, and education.
 nav: true
 nav_order: 4
 ---
@@ -24,6 +24,11 @@ Built an MLIR-based compilation flow for heterogeneous backend devices. The work
 **IMBED LLC - Development Engineer Trainee**<br>
 _Sep. 2021 - Jan. 2022_<br>
 Designed components for a real-time JPEG2000 player for digital cinema applications, with emphasis on FPGA implementation of the MQ entropy decoder.
+
+## Teaching
+
+- **Teaching Assistant**, EECS 112L Organization of Digital Computers Laboratory, Fall 2026.
+- **Teaching Assistant**, EECS 112 Organization of Digital Computers, Fall 2023.
 
 ## Honors
 

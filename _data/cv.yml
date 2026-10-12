@@ -73,6 +73,14 @@ cv:
         end_date: 2026-04
         summary: Independently built a DAG execution framework with task-variant profiling, memory-aware device/variant selection, communication-cost modeling, and buffer lifetime planning. Implemented a C++/MPI runtime to execute planned task placements, dependency transfers, and buffer allocation/free operations. The project is complete; its scheduling concepts later informed CoVA.
 
+    Teaching:
+      - name: EECS 112L - Organization of Digital Computers Laboratory
+        date: Fall 2026
+        summary: Teaching Assistant, University of California, Irvine.
+      - name: EECS 112 - Organization of Digital Computers
+        date: Fall 2023
+        summary: Teaching Assistant, University of California, Irvine.
+
     Awards:
       - title: Best Paper Award - Artifact Track, ICPE 2025
         date: 2025-05
