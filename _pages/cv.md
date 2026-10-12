@@ -2,7 +2,7 @@
 layout: page
 title: CV
 permalink: /cv/
-description: A web version of my curriculum vitae, with a link to the latest PDF.
+description: A web version of my curriculum vitae, with downloads for the full CV and one-page resume.
 nav: true
 nav_order: 5
 toc:
@@ -11,15 +11,21 @@ toc:
 
 <p>
   <a class="btn btn-sm btn-outline-primary" href="/assets/pdf/HongzhengTian_CV.pdf" target="_blank" rel="noopener noreferrer">
-    <i class="fa-solid fa-file-pdf"></i> Download PDF
+    <i class="fa-solid fa-file-pdf"></i> Full CV (PDF)
+  </a>
+  <a class="btn btn-sm btn-outline-primary" href="/assets/pdf/HongzhengTian_Resume.pdf" target="_blank" rel="noopener noreferrer">
+    <i class="fa-solid fa-file-pdf"></i> One-page Resume (PDF)
   </a>
 </p>
+
+The one-page resume focuses on compiler and heterogeneous computing roles.
 
 ## Contact
 
 - **Email:** [hongzhet@uci.edu](mailto:hongzhet@uci.edu)
 - **GitHub:** [github.com/hongzhengTian](https://github.com/hongzhengTian)
-- **LinkedIn:** [linkedin.com/in/hongzheng-tian-853258204](https://www.linkedin.com/in/hongzheng-tian-853258204/)
+- **LinkedIn:** [linkedin.com/in/hongzhengtian](https://www.linkedin.com/in/hongzhengtian/)
+- **Google Scholar:** [Publication profile](https://scholar.google.com/citations?user=rPGeWEUAAAAJ)
 - **Website:** [hongzhengtian.com](https://hongzhengtian.com/)
 
 ## Education
@@ -49,9 +55,15 @@ toc:
 ## Skills
 
 - **Languages:** C, C++, OpenMP, Python, Verilog HDL, VHDL, MATLAB.
-- **Software And Tools:** MLIR, LLVM, Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB.
+- **Software And Tools:** MLIR, LLVM, CUDA, MPI, HLS, Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB.
 
 ## Research And Publications
+
+### HeteroTask: Distributed Heterogeneous Task Runtime
+
+**Jan. 2025 - Apr. 2026**
+
+Independently built a DAG execution framework with task-variant profiling, memory-aware device/variant selection, communication-cost modeling, and buffer lifetime planning. Implemented a C++/MPI runtime to execute planned task placements, dependency transfers, and buffer allocation/free operations. The project is complete; its scheduling concepts later informed CoVA.
 
 ### HeteroBench: Multi-kernel Benchmarks For Heterogeneous Systems
 
@@ -59,7 +71,7 @@ toc:
 Project jointly supervised by the CORSA Lab, UCI and Hewlett Packard Labs.
 Advisors: Prof. Sitao Huang and Dr. Alok Mishra.
 
-Built a cross-platform benchmark suite for evaluating heterogeneous HPC workloads across CPUs, GPUs, and FPGAs using Python, OpenMP, CUDA, and HLS.
+Independently implemented a CPU/GPU/FPGA benchmark suite using Python, OpenMP, CUDA, and HLS. Built a JSON-configured Python driver with Jinja-generated Makefiles for backend-specific builds, benchmark execution, profiler integration, and experiment logging.
 
 - Publication: [ICPE 2025](https://doi.org/10.1145/3676151.3719366), [SPEC RG Tools](https://research.spec.org/tools/overview/heterobench/)
 - Code: [HewlettPackard/HeteroBench](https://github.com/HewlettPackard/HeteroBench)
@@ -73,11 +85,11 @@ A framework for optimizing dataflow mappings of Transformer inference workloads 
 
 ### CoVA: An MLIR-Based Compilation Flow For Versatile Architecture
 
-**Jun. 2023 - Sep. 2023**
-Project jointly supervised by the CORSA Lab, UCI and Hewlett Packard Labs.
+**Jun. 2023 - Present**
+Doctoral research at UCI, continuing the project begun during the 2023 HPE internship.
 Advisors: Prof. Sitao Huang and Dr. Alok Mishra.
 
-Built an MLIR-based compilation flow for heterogeneous backend devices, enhancing code portability and efficiency.
+Built a numerical Python compiler integrating custom MLIR passes with upstream bufferization and lowering infrastructure for CPU LLVM/OpenMP and NVIDIA GPU LLVM/NVVM backends. Implemented loop and region storage analyses to prove independence and enable GPU-resident buffers where safe, GPU thread mapping, and fixed-group reduction trees with results independent of physical thread count for supported reductions. Implemented stream and temporary-buffer reuse and analysis-guided synchronization; evaluated correctness and performance with NPBench and paired measurements. FPGA support remains experimental.
 
 - Publication: [SC 2024 ACM Student Research Competition Poster](https://sc24.supercomputing.org/proceedings/poster/poster_pages/post190.html)
 
@@ -89,7 +101,8 @@ Advisors: Prof. Sitao Huang, Prof. Yanjun Zhang, and Dr. Bo Yu.
 
 FPGA-based acceleration of autonomous path planning, focusing on sparse matrix-vector multiplication and preconditioned conjugate gradient (PCG) computation for quadratic programming.
 
-- Publication: [ICCAD 2024](https://dl.acm.org/doi/abs/10.1145/3676536.3676700)
+- Journal: [ACM TACO, 2025](https://doi.org/10.1145/3750449)
+- Conference: [ICCAD 2024](https://dl.acm.org/doi/abs/10.1145/3676536.3676700)
 - Poster: [FPGA 2024](https://dl.acm.org/doi/abs/10.1145/3626202.3637597)
 
 ### PyAIE: A Python-Based Programming Framework For Versal ACAP AI Engines
@@ -98,7 +111,7 @@ FPGA-based acceleration of autonomous path planning, focusing on sparse matrix-v
 Project at the CORSA Lab, UCI.
 Advisor: Prof. Sitao Huang.
 
-Built a Python-based code generator targeting Versal ACAP AI Engines.
+Independently implemented a Python-based framework generating AI Engine kernel code, host code, and configuration scripts for AMD Versal ACAP.
 
 - Publication: [DAC 2023 Late Breaking Results](https://ieeexplore.ieee.org/abstract/document/10247843)
 
@@ -122,10 +135,9 @@ Built a new FPGA implementation of an associative processor.
 
 Developed a benchmarking framework to evaluate performance and scalability across heterogeneous computing platforms.
 
-- Designed and implemented a benchmark suite for evaluating heterogeneous systems across CPUs, GPUs, and accelerators.
-- Developed profiling and measurement methodologies to capture performance, scalability, and resource utilization across diverse workloads.
-- Conducted experimental evaluations to analyze system behavior across different scheduling and execution strategies.
-- Provided insights into performance variability across architectures, supporting system optimization and scheduling research.
+- Independently implemented CPU/GPU/FPGA benchmarks using Python, OpenMP, CUDA, and HLS.
+- Implemented a JSON-configured Python driver with Jinja-generated Makefiles for backend-specific builds and benchmark execution.
+- Integrated profiling commands, experiment parameters, and execution logs into the benchmark workflow.
 
 ### Hewlett Packard Enterprise - Research Associate Intern
 
@@ -134,10 +146,8 @@ Developed a benchmarking framework to evaluate performance and scalability acros
 
 Built an MLIR-based compilation flow for heterogeneous backend devices, enhancing code portability and efficiency.
 
-- Learned the MLIR framework and the compilation flow from MLIR to LLVM IR, including Python bindings integration.
-- Designed custom MLIR dialects to abstract program semantics from hardware specifics, enabling integration of high-level languages including Python, C/C++, and Fortran.
-- Implemented analysis and transformation passes for optimization and lowering to heterogeneous backends, including CPUs, GPUs, and FPGAs.
-- Built a flexible compilation flow to improve portability and performance across diverse hardware platforms.
+- Designed custom MLIR dialects to separate high-level program semantics from hardware-specific details.
+- Implemented compiler analysis and transformation passes for a heterogeneous compilation flow.
 
 ### IMBED LLC - Development Engineer Trainee
 

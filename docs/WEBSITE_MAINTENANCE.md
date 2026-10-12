@@ -325,7 +325,7 @@ _pages/cv.md
 cv_pdf: /assets/pdf/HongzhengTian_CV.pdf
 email: hongzhet@uci.edu
 github_username: hongzhengTian
-linkedin_username: hongzheng-tian-853258204
+linkedin_username: hongzhengtian
 rss_icon: false
 ```
 
@@ -496,3 +496,7 @@ DNS 端：
 - 替换 PDF。
 - 替换头像。
 - 增加一条简单 award/activity。
+
+## 一页 Resume 同步
+
+一页求职简历源码为 `../HongzhengTian_CV/resume.tex`。共享事实更新时，和完整 CV 一起检查，保持一页。编译后的 `../HongzhengTian_CV/output/pdf/HongzhengTian_Resume.pdf` 原样复制到 `assets/pdf/HongzhengTian_Resume.pdf`；核对本地、构建产物及部署后文件字节一致。首页和 `/cv/` 都提供下载入口。未发表的 HeteroTask 作为项目展示，不加入论文列表。

@@ -10,7 +10,7 @@ cv:
     - network: GitHub
       username: hongzhengTian
     - network: LinkedIn
-      username: hongzheng-tian-853258204
+      username: hongzhengtian
 
   sections:
     Education:
@@ -44,9 +44,9 @@ cv:
         end_date: 2024-09
         summary: Developed HeteroBench, a benchmark suite for heterogeneous computing systems.
         highlights:
-          - Designed benchmarks for CPUs, GPUs, and accelerators.
-          - Built profiling methodologies for performance, scalability, and resource utilization.
-          - Analyzed scheduling and execution strategies across diverse architectures.
+          - Independently implemented CPU/GPU/FPGA benchmarks using Python, OpenMP, CUDA, and HLS.
+          - Automated backend-specific builds and execution with a JSON-configured Python driver and Jinja-generated Makefiles.
+          - Integrated profiling commands, experiment parameters, and execution logs.
       - company: Hewlett Packard Enterprise
         position: Research Associate Intern
         location: Remote / USA
@@ -55,7 +55,7 @@ cv:
         summary: Built CoVA, an MLIR-based compilation flow for heterogeneous backend devices.
         highlights:
           - Designed custom MLIR dialects for high-level program semantics.
-          - Implemented analysis and transformation passes targeting CPUs, GPUs, and FPGAs.
+          - Implemented compiler analysis and transformation passes for a heterogeneous compilation flow.
           - Integrated Python bindings and MLIR-to-LLVM lowering.
       - company: IMBED LLC
         position: Development Engineer Trainee
@@ -66,6 +66,12 @@ cv:
         highlights:
           - Implemented JPEG2000 decoder components.
           - Designed and simulated the MQ entropy decoder in Verilog HDL.
+
+    Projects:
+      - name: HeteroTask
+        start_date: 2025-01
+        end_date: 2026-04
+        summary: Independently built a DAG execution framework with task-variant profiling, memory-aware device/variant selection, communication-cost modeling, and buffer lifetime planning. Implemented a C++/MPI runtime to execute planned task placements, dependency transfers, and buffer allocation/free operations. The project is complete; its scheduling concepts later informed CoVA.
 
     Awards:
       - title: Best Paper Award - Artifact Track, ICPE 2025
@@ -85,6 +91,6 @@ cv:
       - label: Languages
         details: C, C++, OpenMP, Python, Verilog HDL, VHDL, MATLAB
       - label: Tools
-        details: MLIR, LLVM, Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB
+        details: MLIR, LLVM, CUDA, MPI, HLS, Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB
       - label: Research Areas
         details: compilers, heterogeneous computing, optimization, FPGA/GPU acceleration, benchmarking

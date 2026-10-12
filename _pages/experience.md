@@ -9,13 +9,17 @@ nav_order: 4
 
 ## Research Experience
 
+**HeteroTask - Distributed Heterogeneous Task Runtime**<br>
+_Jan. 2025 - Apr. 2026_<br>
+Independently built a DAG execution framework with task-variant profiling, memory-aware device/variant selection, communication-cost modeling, and buffer lifetime planning. Implemented a C++/MPI runtime to execute planned task placements, dependency transfers, and buffer allocation/free operations. The project is complete; its scheduling concepts later informed CoVA.
+
 **Hewlett Packard Enterprise - Research Associate Intern**<br>
 _Summer 2024, HeteroBench_<br>
-Developed a benchmark suite for heterogeneous computing systems across CPUs, GPUs, and accelerators. The work focused on workload design, profiling, scalability measurement, and analysis of performance variability across diverse execution strategies.
+Independently implemented a CPU/GPU/FPGA benchmark suite using Python, OpenMP, CUDA, and HLS. Built a JSON-configured Python driver with Jinja-generated Makefiles for backend-specific builds, benchmark execution, profiler integration, and experiment logging.
 
 **Hewlett Packard Enterprise - Research Associate Intern**<br>
 _Summer 2023, CoVA_<br>
-Built an MLIR-based compilation flow for heterogeneous backend devices. The work included custom dialect design, MLIR-to-LLVM lowering, Python binding integration, and transformations targeting CPUs, GPUs, and FPGAs.
+Built an MLIR-based compilation flow for heterogeneous backend devices. The work included custom dialect design, MLIR-to-LLVM lowering, Python binding integration, and compiler analysis and transformation passes.
 
 **IMBED LLC - Development Engineer Trainee**<br>
 _Sep. 2021 - Jan. 2022_<br>
