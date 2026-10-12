@@ -21,3 +21,9 @@ Treat CV content updates as a joint task with `../HongzhengTian_CV`:
   authorized, publish both repositories, confirm both deployment workflows,
   and verify live shared facts and the live PDF against the local PDF.
 - If either repository is unavailable, report synchronization as incomplete.
+
+- Maintain `resume.tex` in the CV repository alongside shared CV facts. Compile it
+  to `output/pdf/HongzhengTian_Resume.pdf`, keep it one page, and copy the exact
+  file to the website `assets/pdf/HongzhengTian_Resume.pdf`. Verify local, built,
+  and (when publishing) deployed copies match. Keep the homepage and CV-page
+  download links working. The resume is a curated subset, not the full CV.
