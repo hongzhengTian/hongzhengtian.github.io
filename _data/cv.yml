@@ -30,7 +30,7 @@ cv:
         start_date: 2020-09
         end_date: 2022-06
       - institution: Northwestern Polytechnical University
-        location: Shaanxi, China
+        location: Xi'an, Shaanxi, China
         area: Microelectronics Science and Engineering
         studyType: B.Eng.
         start_date: 2016-09
@@ -39,24 +39,24 @@ cv:
     Experience:
       - company: Hewlett Packard Enterprise
         position: Research Associate Intern
-        location: Remote / USA
+        location: Milpitas, CA
         start_date: 2024-06
         end_date: 2024-09
-        summary: Developed HeteroBench, a benchmark suite for heterogeneous computing systems.
+        summary: Lead developer of HeteroBench, a benchmark suite for heterogeneous computing systems.
         highlights:
-          - Independently implemented CPU/GPU/FPGA benchmarks using Python, OpenMP, CUDA, and HLS.
+          - Led development of 11 multi-kernel applications with Python, OpenMP, CUDA, and HLS implementations for CPUs, GPUs, and FPGAs.
           - Automated backend-specific builds and execution with a JSON-configured Python driver and Jinja-generated Makefiles.
           - Integrated profiling commands, experiment parameters, and execution logs.
       - company: Hewlett Packard Enterprise
         position: Research Associate Intern
-        location: Remote / USA
+        location: Milpitas, CA
         start_date: 2023-06
         end_date: 2023-09
-        summary: Built CoVA, an MLIR-based compilation flow for heterogeneous backend devices.
+        summary: Built the initial framework of CoVA (Compiler for Versatile Architectures).
         highlights:
-          - Designed custom MLIR dialects for high-level program semantics.
+          - Designed a custom MLIR dialect separating program semantics from target-specific lowering.
+          - Implemented MLIR-to-LLVM lowering and Python bindings.
           - Implemented compiler analysis and transformation passes for a heterogeneous compilation flow.
-          - Integrated Python bindings and MLIR-to-LLVM lowering.
       - company: IMBED LLC
         position: Development Engineer Trainee
         location: Remote
@@ -68,10 +68,13 @@ cv:
           - Designed and simulated the MQ entropy decoder in Verilog HDL.
 
     Projects:
+      - name: CoVA (Compiler for Versatile Architectures)
+        start_date: 2023-06
+        summary: Ph.D. thesis project; sole developer of an MLIR-based compiler that maps NumPy programs to CPUs and GPUs.
       - name: HeteroTask
         start_date: 2025-01
         end_date: 2026-04
-        summary: Independently built a DAG execution framework with task-variant profiling, memory-aware device/variant selection, communication-cost modeling, and buffer lifetime planning. Implemented a C++/MPI runtime to execute planned task placements, dependency transfers, and buffer allocation/free operations. The project is complete; its scheduling concepts later informed CoVA.
+        summary: Sole developer of a DAG execution framework with task-variant profiling, memory-aware device and variant selection, communication-cost modeling, and buffer lifetime planning, plus a C++/MPI runtime that executes planned task placements, dependency transfers, and buffer allocation and release across CPU/GPU nodes. Its scheduling concepts later informed CoVA.
 
     Teaching:
       - name: EECS 112L - Organization of Digital Computers Laboratory
@@ -85,10 +88,10 @@ cv:
       - title: Best Paper Award - Artifact Track, ICPE 2025
         date: 2025-05
         awarder: ICPE
-      - title: Nominated for EECS Professor/Graduate Student/Undergraduate Student of the Year Award
+      - title: Nominee, EECS Graduate Student of the Year Award
         date: 2024-03
         awarder: University of California, Irvine
-      - title: Second-class Scholarship for Outstanding Student
+      - title: Second-class Scholarship for Outstanding Students
         date: 2018-12
         awarder: Northwestern Polytechnical University
       - title: Second Prize, Undergraduate Mathematical Contest in Modelling
@@ -97,8 +100,8 @@ cv:
 
     Skills:
       - label: Languages
-        details: C, C++, OpenMP, Python, Verilog HDL, VHDL, MATLAB
+        details: C, C++, Python, CUDA, Verilog HDL, VHDL, MATLAB
       - label: Tools
-        details: MLIR, LLVM, CUDA, MPI, HLS, Xilinx Design Tools, Synopsys, Cadence, Quartus, ModelSim, MATLAB
+        details: MLIR, LLVM/NVVM, OpenMP, CUDA, MPI, Vitis HLS, PyTorch, Triton, AMD/Xilinx Vivado and Vitis, Synopsys, Cadence, Quartus, ModelSim
       - label: Research Areas
         details: compilers, heterogeneous computing, optimization, FPGA/GPU acceleration, benchmarking

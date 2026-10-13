@@ -27,3 +27,9 @@ Treat CV content updates as a joint task with `../HongzhengTian_CV`:
   file to the website `assets/pdf/HongzhengTian_Resume.pdf`. Verify local, built,
   and (when publishing) deployed copies match. Keep the homepage and CV-page
   download links working. The resume is a curated subset, not the full CV.
+- The CV repository also maintains `resume_ai.tex` (AI systems variant, output
+  `HongzhengTian_Resume_AI.pdf`). Do not copy it into `assets/pdf/` or link it
+  from the website unless the user asks.
+- Run Jekyll with a UTF-8 locale (for example
+  `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll build`); without it,
+  al-folio fails on non-ASCII characters such as en dashes.

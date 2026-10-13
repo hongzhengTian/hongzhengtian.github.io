@@ -2,9 +2,9 @@
 layout: page
 title: "Sparsity-Aware Path Planning Accelerator"
 description: "FPGA acceleration for autonomous path planning."
-importance: 4
+importance: 5
 category: research
-related_publications: true
+related_publications: false
 ---
 
 This project accelerates autonomous path planning by targeting the quadratic programming bottleneck with FPGA-based hardware/software co-optimization.

@@ -2,9 +2,9 @@
 layout: page
 title: "Associative Processor on FPGA"
 description: "Design exploration of associative processor implementation on FPGA."
-importance: 6
+importance: 7
 category: research
-related_publications: true
+related_publications: false
 ---
 
 This project explores an FPGA implementation of an associative processor for in-memory computing. The design includes content addressable memory and supporting circuits such as controller, data cache, instruction cache, and program counter.

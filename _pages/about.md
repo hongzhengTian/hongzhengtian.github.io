@@ -19,17 +19,19 @@ social: false
 announcements:
   enabled: true
   scrollable: true
-  limit: 4
+  limit: 10
 
 latest_posts:
   enabled: false
 ---
 
-I am a Ph.D. candidate in Computer Engineering at the [EECS Department](https://engineering.uci.edu/dept/eecs) of the [University of California, Irvine](https://uci.edu/), advised by Prof. [Sitao Huang](https://engineering.uci.edu/users/sitao-huang) in the [CORSA](https://corsa.eng.uci.edu/) research group.
+I am a Ph.D. candidate in Computer Engineering at the [EECS Department](https://engineering.uci.edu/dept/eecs) of the [University of California, Irvine](https://uci.edu/), advised by Prof. [Sitao Huang](https://engineering.uci.edu/users/sitao-huang) in the [CORSA](https://corsa.eng.uci.edu/) research group. I expect to graduate in June 2027.
 
-My research lies at the intersection of **compilers, optimization, and heterogeneous computing**. My work spans CPU/GPU compilation in CoVA, distributed task scheduling in HeteroTask, and CPU/GPU/FPGA benchmarking in HeteroBench. My recent work studies benchmark design, MLIR-based compilation, task scheduling, and hardware/software co-optimization for diverse accelerator platforms.
+My research focuses on **compilers and runtime systems for heterogeneous computing**. My thesis project, [CoVA](/projects/cova/) (Compiler for Versatile Architectures), is an MLIR-based compiler that maps NumPy programs to CPUs and GPUs. Related projects include [HeteroTask](/projects/heterotask/), a distributed task runtime with offline DAG scheduling for CPU/GPU nodes, and [HeteroBench](/projects/heterobench/), a CPU/GPU/FPGA benchmark suite that received the ICPE 2025 Best Paper Award - Artifact Track.
 
 I am broadly interested in compiler infrastructure for heterogeneous systems, performance portability, accelerator design automation, and practical tools that help researchers and developers reason about efficiency across modern hardware.
+
+**I am on the job market** and looking for full-time roles in compilers and heterogeneous computing starting in 2027.
 
 <style>
   .post-header .post-title::after {

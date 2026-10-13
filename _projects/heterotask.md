@@ -2,13 +2,16 @@
 layout: page
 title: "HeteroTask"
 description: "Offline DAG scheduling and distributed CPU/GPU execution."
-importance: 2
+importance: 3
 category: research
 related_publications: false
 ---
 
 **Jan. 2025 - Apr. 2026**
 
-Independently built a DAG execution framework with task-variant profiling, memory-aware device/variant selection, communication-cost modeling, and buffer lifetime planning. Implemented a C++/MPI runtime to execute planned task placements, dependency transfers, and buffer allocation/free operations. The project is complete; its scheduling concepts later informed CoVA.
+HeteroTask is a distributed heterogeneous task runtime that I developed as sole developer at UC Irvine.
 
-The framework profiles task variants, constructs offline schedules, and executes those schedules through a C++/MPI runtime. It targets applications whose DAG and input size are known before execution; it does not perform online global rescheduling.
+- Built a DAG execution framework with task-variant profiling, memory-aware device and variant selection, communication-cost modeling, and buffer lifetime planning.
+- Implemented a C++/MPI runtime that executes planned task placements, dependency transfers, and buffer allocation and release across CPU/GPU nodes.
+
+The framework is designed for applications whose task graph and input sizes are known before execution, so schedules can be optimized offline. Its scheduling concepts later informed CoVA.

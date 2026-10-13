@@ -1,14 +1,20 @@
 ---
 layout: page
 title: "CoVA"
-description: "An MLIR-based compilation flow for versatile architecture."
-importance: 3
+description: "Compiler for Versatile Architectures: an MLIR-based compiler for CPUs and GPUs."
+importance: 1
 category: research
-related_publications: true
+related_publications: false
 ---
 
-CoVA is my ongoing doctoral research at UC Irvine, continuing the project begun during my 2023 HPE research internship. It is an MLIR-based compiler for numerical Python workloads on heterogeneous systems.
+**Jun. 2023 - Present**
 
-Built a numerical Python compiler integrating custom MLIR passes with upstream bufferization and lowering infrastructure for CPU LLVM/OpenMP and NVIDIA GPU LLVM/NVVM backends. Implemented loop and region storage analyses to prove independence and enable GPU-resident buffers where safe, GPU thread mapping, and fixed-group reduction trees with results independent of physical thread count for supported reductions. Implemented stream and temporary-buffer reuse and analysis-guided synchronization; evaluated correctness and performance with NPBench and paired measurements. FPGA support remains experimental.
+CoVA (Compiler for Versatile Architectures) is my Ph.D. thesis project at UC Irvine: an MLIR-based compiler that maps NumPy programs to CPUs and GPUs. I am its sole developer. The project was initiated during my 2023 research internship at Hewlett Packard Labs, where I built its initial framework: a custom MLIR dialect, MLIR-to-LLVM lowering, and Python bindings.
+
+- **Compiler:** a custom MLIR dialect (38 ops) and 30 passes on top of upstream bufferization, lowering to six CPU/GPU code-generation routes (LLVM, OpenMP CPU/GPU, EmitC C++, and NVVM).
+- **Analyses and GPU code generation:** region-level storage and alias analyses that prove loop independence and keep buffers GPU-resident across control flow; GPU thread-block mapping; deterministic reductions whose results are independent of thread count.
+- **Runtime:** stream and scratch-buffer reuse and analysis-guided segmented synchronization.
+- **PyTorch path:** torch.export/AOTInductor packaging into persistent `.pt2` executables with verified Triton pattern specialization.
+- **Evaluation:** NPBench workloads under strict golden-reference checks (53/54 on CPU and 52/54 on GPU).
 
 Link: [SC24 ACM Student Research Competition poster](https://sc24.supercomputing.org/proceedings/poster/poster_pages/post190.html).
