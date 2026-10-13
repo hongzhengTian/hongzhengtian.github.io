@@ -177,9 +177,9 @@ See also the [publications page](/publications/) and [Google Scholar](https://sc
 
 ## Skills
 
-- **Programming:** C, C++, Python, CUDA, Verilog HDL, VHDL, MATLAB.
+- **Programming:** C, C++, Python, Verilog HDL, VHDL, MATLAB.
 - **Compilers and ML systems:** MLIR, LLVM/NVVM, OpenMP offloading, EmitC; PyTorch (torch.export, AOTInductor), Triton, torch-mlir.
-- **Parallel computing:** OpenMP, CUDA, MPI, high-level synthesis (Vitis HLS).
+- **Parallel computing:** OpenMP, MPI, CUDA, high-level synthesis (Vitis HLS).
 - **EDA and tools:** AMD/Xilinx Vivado and Vitis, Synopsys, Cadence, Quartus, ModelSim.
 
 ## Undergraduate Projects

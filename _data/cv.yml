@@ -100,7 +100,7 @@ cv:
 
     Skills:
       - label: Languages
-        details: C, C++, Python, CUDA, Verilog HDL, VHDL, MATLAB
+        details: C, C++, Python, Verilog HDL, VHDL, MATLAB
       - label: Tools
         details: MLIR, LLVM/NVVM, OpenMP, CUDA, MPI, Vitis HLS, PyTorch, Triton, AMD/Xilinx Vivado and Vitis, Synopsys, Cadence, Quartus, ModelSim
       - label: Research Areas
