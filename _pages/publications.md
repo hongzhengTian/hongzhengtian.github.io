@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Selected papers, posters, and research artifacts.
+description: Papers, posters, patents, and research artifacts.
 nav: true
 nav_order: 3
 ---
