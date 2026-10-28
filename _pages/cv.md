@@ -120,6 +120,7 @@ _CoVA: Compiler for Versatile Architectures._
 
 - Built CoVA's initial compilation framework: a custom MLIR dialect separating high-level program semantics from target-specific lowering, MLIR-to-LLVM lowering, and Python bindings.
 - Implemented compiler analysis and transformation passes for the heterogeneous compilation flow; the project continued as my Ph.D. thesis.
+- This work led to a U.S. patent application with Hewlett Packard Enterprise, now allowed [PT1].
 
 ### IMBED LLC - Development Engineer Trainee
 
@@ -132,7 +133,7 @@ _MQ Decoder for a Real-Time FPGA-based JPEG2000 Player for Digital Cinema._
 
 ## Publications
 
-See also the [publications page](/publications/) and [Google Scholar](https://scholar.google.com/citations?user=rPGeWEUAAAAJ).
+See also the [publications page](/publications/) and [Google Scholar](https://scholar.google.com/citations?user=rPGeWEUAAAAJ). Patents are listed in the next section.
 
 ### Conference Papers
 
@@ -154,6 +155,10 @@ See also the [publications page](/publications/) and [Google Scholar](https://sc
 ### Preprints
 
 - **[P1]** H. Xu, F. Tahmasebi, Y. Qiao, **H. Tian**, H. Kwon, and S. Huang. "Optimized Spatial Architecture Mapping Flow for Transformer Accelerators." _arXiv:2410.07407_, 2024. [arXiv](https://arxiv.org/abs/2410.07407)
+
+## Patents
+
+- **[PT1]** A. Mishra, **H. Tian**, R. P. Hong Enriquez, M. P. Dziubinski, X. Zhan, and D. S. Milojicic. "Microarchitectural-Neutral Automatic Type and Shape Inference and Cross-Microarchitecture Invocation." U.S. Patent Application No. 18/678,875, filed May 30, 2024; published as US 2025/0370738 A1. **Allowed** (Notice of Allowance, 2026). Assignee: Hewlett Packard Enterprise. [Google Patents](https://patents.google.com/patent/US20250370738A1/en)
 
 ## Honors and Awards
 

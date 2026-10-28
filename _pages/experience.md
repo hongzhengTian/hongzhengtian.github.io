@@ -29,7 +29,7 @@ Lead developer of HeteroBench, a benchmark suite of 11 multi-kernel applications
 
 **Hewlett Packard Enterprise - Research Associate Intern**<br>
 _Jun. 2023 – Sep. 2023, Hewlett Packard Labs, Milpitas, CA · CoVA_<br>
-Built CoVA's initial compilation framework: a custom MLIR dialect separating program semantics from target-specific lowering, MLIR-to-LLVM lowering, Python bindings, and compiler analysis and transformation passes.
+Built CoVA's initial compilation framework: a custom MLIR dialect separating program semantics from target-specific lowering, MLIR-to-LLVM lowering, Python bindings, and compiler analysis and transformation passes. This work led to a U.S. patent application with Hewlett Packard Enterprise (US 2025/0370738 A1), now allowed by the USPTO.
 
 **IMBED LLC - Development Engineer Trainee**<br>
 _Sep. 2021 – Jan. 2022_<br>
