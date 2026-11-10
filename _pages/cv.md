@@ -67,6 +67,9 @@ CORSA Lab, UCI. Role: Sole developer.
 
 - Built a DAG execution framework with task-variant profiling, memory-aware device and variant selection, communication-cost modeling, and buffer lifetime planning.
 - Implemented a C++/MPI runtime that executes planned task placements, dependency transfers, and buffer allocation and release across CPU/GPU nodes; its scheduling concepts later informed CoVA.
+- Added PEFT-based multi-variant planning and a Bayesian-optimization loop that calibrates empirical overhead corrections for repeated, fixed-DAG workflows.
+- Evaluated five benchmark and workflow-derived applications on up to six 8-GPU nodes; on two nodes, reduced application completion time by 19.7–72.1% relative to StarPU.
+- Publication: [arXiv:2611.10055, 2026](https://arxiv.org/abs/2611.10055) [P2]
 
 ### PyAIE: A Python-based Programming Framework for Versal ACAP
 
@@ -154,6 +157,7 @@ See also the [publications page](/publications/) and [Google Scholar](https://sc
 
 ### Preprints
 
+- **[P2]** **H. Tian**, A. Mishra, H. Xu, D. Milojicic, and S. Huang. "HeteroTask: Multi-Variant Task Scheduling and Execution on Distributed Heterogeneous Clusters." _arXiv:2611.10055_, 2026. [arXiv](https://arxiv.org/abs/2611.10055)
 - **[P1]** H. Xu, F. Tahmasebi, Y. Qiao, **H. Tian**, H. Kwon, and S. Huang. "Optimized Spatial Architecture Mapping Flow for Transformer Accelerators." _arXiv:2410.07407_, 2024. [arXiv](https://arxiv.org/abs/2410.07407)
 
 ## Patents

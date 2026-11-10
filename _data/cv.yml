@@ -74,7 +74,7 @@ cv:
       - name: HeteroTask
         start_date: 2025-01
         end_date: 2026-04
-        summary: Sole developer of a DAG execution framework with task-variant profiling, memory-aware device and variant selection, communication-cost modeling, and buffer lifetime planning, plus a C++/MPI runtime that executes planned task placements, dependency transfers, and buffer allocation and release across CPU/GPU nodes. Its scheduling concepts later informed CoVA.
+        summary: Sole developer of a DAG execution framework with task-variant profiling, memory-aware device and variant selection, communication-cost modeling, and buffer lifetime planning, plus a C++/MPI runtime that executes planned task placements, dependency transfers, and buffer allocation and release across CPU/GPU nodes. Its scheduling concepts later informed CoVA. Described in the 2026 arXiv preprint 2611.10055.
 
     Teaching:
       - name: EECS 112L - Organization of Digital Computers Laboratory

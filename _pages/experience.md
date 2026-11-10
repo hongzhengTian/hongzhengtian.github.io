@@ -15,7 +15,7 @@ Sole developer of an MLIR-based compiler that maps NumPy programs to CPUs and GP
 
 **HeteroTask: Distributed Heterogeneous Task Runtime**<br>
 _Jan. 2025 – Apr. 2026, CORSA Lab, UC Irvine_<br>
-Sole developer of a DAG execution framework with task-variant profiling, memory-aware device and variant selection, communication-cost modeling, and buffer lifetime planning, plus a C++/MPI runtime that executes the planned placements across CPU/GPU nodes. Its scheduling concepts later informed CoVA.
+Sole developer of a DAG execution framework with task-variant profiling, memory-aware device and variant selection, communication-cost modeling, and buffer lifetime planning, plus a C++/MPI runtime that executes the planned placements across CPU/GPU nodes. On two 8-GPU nodes, it reduced application completion time by 19.7–72.1% relative to StarPU ([arXiv:2611.10055](https://arxiv.org/abs/2611.10055)). Its scheduling concepts later informed CoVA.
 
 **PyAIE: A Python-based Programming Framework for Versal ACAP**<br>
 _Sep. 2022 – Jun. 2023, CORSA Lab, UC Irvine_<br>

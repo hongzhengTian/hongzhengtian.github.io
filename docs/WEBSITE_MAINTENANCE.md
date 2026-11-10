@@ -499,7 +499,7 @@ DNS 端：
 
 ## 一页 Resume 同步
 
-一页求职简历源码为 `../HongzhengTian_CV/resume.tex`。共享事实更新时，和完整 CV 一起检查，保持一页。编译后的 `../HongzhengTian_CV/output/pdf/HongzhengTian_Resume.pdf` 原样复制到 `assets/pdf/HongzhengTian_Resume.pdf`；核对本地、构建产物及部署后文件字节一致。首页和 `/cv/` 都提供下载入口。未发表的 HeteroTask 作为项目展示，不加入论文列表。
+一页求职简历源码为 `../HongzhengTian_CV/resume.tex`。共享事实更新时，和完整 CV 一起检查，保持一页。编译后的 `../HongzhengTian_CV/output/pdf/HongzhengTian_Resume.pdf` 原样复制到 `assets/pdf/HongzhengTian_Resume.pdf`；核对本地、构建产物及部署后文件字节一致。首页和 `/cv/` 都提供下载入口。HeteroTask 已于 2026-11-05 以预印本形式发布（arXiv:2611.10055），已列入论文列表；正式录用前只能写 preprint，不能写 accepted。
 
 CV 仓库另有 AI 方向版简历 `resume_ai.tex`，输出为 `HongzhengTian_Resume_AI.pdf`。它与编译器版共用 `resume_parts/` 中的事实，**不发布到网站**，也不复制到 `assets/pdf/`。两版简历和 CV 中的数字只从 `../interview_preparition/00-career/resume/achievement-bank.md` 取用。
 
