@@ -70,7 +70,7 @@ cv:
     Projects:
       - name: CoVA (Compiler for Versatile Architectures)
         start_date: 2023-06
-        summary: Ph.D. thesis project; sole developer of an MLIR-based compiler that maps NumPy programs to CPUs and GPUs.
+        summary: Ph.D. thesis project; sole developer of an MLIR-based compiler that maps NumPy programs to CPUs and GPUs, with offline scheduling and an MPI runtime for multi-node CPU/GPU execution.
       - name: HeteroTask
         start_date: 2025-01
         end_date: 2026-04

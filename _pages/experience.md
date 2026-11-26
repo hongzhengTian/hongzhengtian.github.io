@@ -11,7 +11,7 @@ nav_order: 4
 
 **CoVA: Compiler for Versatile Architectures (Ph.D. Thesis)**<br>
 _Jun. 2023 – Present, CORSA Lab, UC Irvine_<br>
-Sole developer of an MLIR-based compiler that maps NumPy programs to CPUs and GPUs: a custom MLIR dialect and 30 passes lowering to six CPU/GPU code-generation routes, analyses that keep buffers GPU-resident, deterministic GPU reductions, and a PyTorch path for persistent model executables. The project was initiated during the 2023 HPE internship.
+Sole developer of an MLIR-based compiler that maps NumPy programs to CPUs and GPUs: a custom MLIR dialect and 31 passes lowering to six CPU/GPU code-generation routes, analyses that keep buffers GPU-resident, deterministic GPU reductions, a PyTorch path for persistent model executables, and offline scheduling with an MPI runtime for multi-node CPU/GPU execution. The project was initiated during the 2023 HPE internship.
 
 **HeteroTask: Distributed Heterogeneous Task Runtime**<br>
 _Jan. 2025 – Apr. 2026, CORSA Lab, UC Irvine_<br>

@@ -53,12 +53,13 @@ The one-page resume focuses on compiler and heterogeneous computing roles.
 CORSA Lab, UCI; initiated during the 2023 HPE internship.
 Advisor: Prof. Sitao Huang. Mentor: Dr. Alok Mishra (Hewlett Packard Labs). Role: Sole developer.
 
-- Built an MLIR-based compiler for NumPy programs: a custom dialect (38 ops) and 30 passes on top of upstream bufferization, lowering to six CPU/GPU code-generation routes (LLVM, OpenMP CPU/GPU, EmitC C++, and NVVM).
-- On CPU, achieved a 3.5× geomean speedup over NumPy across 53 NPBench workloads, outperforming Numba and DaCe; 53/54 CPU and 52/54 GPU workloads pass strict golden-reference checks.
-- Designed region-level storage and alias analyses that prove loop independence and keep buffers GPU-resident across control flow; implemented GPU thread-block mapping and deterministic reductions whose results are independent of thread count.
-- Implemented stream and scratch-buffer reuse and analysis-guided segmented synchronization in the CUDA runtime.
+- Built an MLIR-based compiler for NumPy programs: a custom dialect (38 ops) and 31 passes on top of upstream bufferization, lowering to six CPU/GPU code-generation routes (LLVM, OpenMP CPU/GPU, EmitC C++, and NVVM).
+- Passes strict validation on all 53 evaluated NPBench programs on both CPU and GPU, compared with 47 and 45 for DaCe; evaluated against NumPy, Numba, DaCe, CuPy, and JAX [U1].
+- Designed region-level storage and placement analyses that prove loop independence and keep buffers GPU-resident across control flow; implemented GPU thread-block mapping and thread-count-independent deterministic reductions.
+- Implemented stream and scratch-buffer reuse in the CUDA runtime and analysis-guided execution ordering that chooses between whole-call submission and segmented synchronization.
+- Extended CoVA with profiling-driven offline scheduling and an MPI runtime that runs compiled and native CPU/GPU task implementations across nodes, with GPU-resident data and same-host CUDA IPC transfers.
 - Built a PyTorch path that packages models into persistent `.pt2` executables through torch.export and AOTInductor, with verified Triton pattern specialization; runs end-to-end GPT-2 generation.
-- Publication: [SC24 ACM Student Research Competition Poster](https://sc24.supercomputing.org/proceedings/poster/poster_pages/post190.html) [S4]
+- Publications: Under review [U1]; [SC24 ACM Student Research Competition Poster](https://sc24.supercomputing.org/proceedings/poster/poster_pages/post190.html) [S4]
 
 ### HeteroTask: Distributed Heterogeneous Task Runtime
 
@@ -131,7 +132,7 @@ _CoVA: Compiler for Versatile Architectures._
 _MQ Decoder for a Real-Time FPGA-based JPEG2000 Player for Digital Cinema._
 
 - Implemented the JPEG2000 decoder in C according to the official JPEG2000 specification.
-- Designed and simulated the tier-1 entropy decoder (MQ decoder) in Verilog HDL, drawing on published MQ-decoder improvements.
+- Designed and simulated the tier-1 MQ entropy decoder in Verilog HDL, drawing on published MQ-decoder improvements.
 - Optimized the decoder to meet timing and throughput constraints, reaching up to 450 MHz.
 
 ## Publications
@@ -154,6 +155,10 @@ See also the [publications page](/publications/) and [Google Scholar](https://sc
 - **[S3]** X. Niu, Y. Zhang, Y. Zhang, **H. Tian**, B. Yu, S. Liu, and S. Huang. "Accelerating Autonomous Path Planning on FPGAs with Sparsity-Aware HW/SW Co-Optimizations." _ACM/SIGDA International Symposium on Field Programmable Gate Arrays (FPGA)_, poster, 2024. [DOI](https://doi.org/10.1145/3626202.3637597)
 - **[S2]** **H. Tian**, S. Yang, Y. Cha, and S. Huang. "Late Breaking Results: PyAIE: A Python-based Programming Framework for Versal ACAP Platforms." _60th ACM/IEEE Design Automation Conference (DAC)_, pp. 1–2, 2023. [DOI](https://doi.org/10.1109/DAC56929.2023.10247843)
 - **[S1]** **H. Tian**, S. Yang, Y. Cha, and S. Huang. "PyAIE: A Python-based Compiler Framework for Versal ACAP Platforms." _Workshop on Languages, Tools, and Techniques for Accelerator Design (LATTE)_, 2023. [PDF](https://capra.cs.cornell.edu/latte23/paper/10.pdf)
+
+### Under Review
+
+- **[U1]** **H. Tian**, H. Xu, A. Mishra, P. Prakash, R. P. Hong Enriquez, D. Milojicic, and S. Huang. "CoVA: Compiling NumPy Programs for Efficient CPU and GPU Execution." Under review, 2026.
 
 ### Preprints
 
