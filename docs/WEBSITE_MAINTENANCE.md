@@ -501,6 +501,6 @@ DNS 端：
 
 一页求职简历源码为 `../HongzhengTian_CV/resume.tex`。共享事实更新时，和完整 CV 一起检查，保持一页。编译后的 `../HongzhengTian_CV/output/pdf/HongzhengTian_Resume.pdf` 原样复制到 `assets/pdf/HongzhengTian_Resume.pdf`；核对本地、构建产物及部署后文件字节一致。首页和 `/cv/` 都提供下载入口。HeteroTask 已于 2026-11-05 以预印本形式发布（arXiv:2611.10055），已列入论文列表；正式录用前只能写 preprint，不能写 accepted。
 
-CV 仓库另有 `resume-versions/` 下的 4 份投递用简历（V1 编译器、V2 ML systems、V3 分布式 / runtime、V4 硬件 / FPGA）。它们与公开版共用 `resume_parts/` 中的事实，**不发布到网站**，也不复制到 `assets/pdf/`；CC 2027 评审期间 CoVA 性能倍数只出现在这 4 份里。所有简历和 CV 中的数字只从 `../interview_preparition/00-career/resume/achievement-bank.md` 取用。
+CV 仓库另有 `resume-versions/` 下的 4 份投递用简历（V1 编译器、V2 ML systems、V3 分布式 / runtime、V4 硬件 / FPGA）。它们与公开版共用 `resume_parts/` 中的事实，**不发布到网站**，也不复制到 `assets/pdf/`；CoVA 论文评审期间，性能倍数只出现在这 4 份里。所有简历和 CV 中的数字只从 `../interview_preparition/00-career/resume/achievement-bank.md` 取用。
 
 如果本地 `bundle exec jekyll build` 报 `invalid byte sequence in US-ASCII`，说明终端没有设置 UTF-8 locale，改用 `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 bundle exec jekyll build`。
